@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Light.otf">
+            <string>CircularAirPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TotalCostVC" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNightNLocation" destination="jtF-sq-Afx" id="tr3-O0-qjb"/>
+                <outlet property="lblPaymentBreakdown" destination="p1e-qx-9qJ" id="NAE-0K-QLJ"/>
+                <outlet property="tblPricelIst" destination="ElZ-PX-9Xc" id="7yY-B4-KrX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwHeader" destination="Sqo-dY-hUk" id="0zM-XO-iIQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBS-XN-coh">
+                    <rect key="frame" x="10" y="10" width="32" height="32"/>
+                    <state key="normal" image="cancel"/>
+                    <connections>
+                        <action selector="btnCancel:" destination="-1" eventType="touchUpInside" id="tya-r1-1r6"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ElZ-PX-9Xc">
+                    <rect key="frame" x="0.0" y="52" width="320" height="428"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IGd-cw-ITc"/>
+                        <outlet property="delegate" destination="-1" id="fXS-VB-xwf"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sqo-dY-hUk">
+                    <rect key="frame" x="0.0" y="316" width="320" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyW-ZD-QvC">
+                            <rect key="frame" x="0.0" y="15" width="320" height="70"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment Breakdown " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1e-qx-9qJ">
+                                    <rect key="frame" x="20" y="6" width="280" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtF-sq-Afx">
+                                    <rect key="frame" x="20" y="43" width="300" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="15"/>
+                                    <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kBS-XN-coh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="6ju-Ix-p98"/>
+                <constraint firstItem="ElZ-PX-9Xc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KNl-CQ-UVh"/>
+                <constraint firstAttribute="bottom" secondItem="ElZ-PX-9Xc" secondAttribute="bottom" id="Rnh-Fh-bHm"/>
+                <constraint firstItem="ElZ-PX-9Xc" firstAttribute="top" secondItem="kBS-XN-coh" secondAttribute="bottom" constant="10" id="S4q-I9-gip"/>
+                <constraint firstItem="kBS-XN-coh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SsJ-0O-jHc"/>
+                <constraint firstAttribute="trailing" secondItem="ElZ-PX-9Xc" secondAttribute="trailing" id="zyV-jy-p66"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-38" y="4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="32" height="32"/>
+    </resources>
+</document>

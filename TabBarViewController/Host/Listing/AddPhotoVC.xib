@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="arheb1.ttf">
+            <string>makent1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPhotoVC" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="btnEdit" destination="psN-OL-tHn" id="fh2-cc-liA"/>
+                <outlet property="collectionImages" destination="Ng4-12-udM" id="w0R-fA-xHZ"/>
+                <outlet property="lbAddPhotos" destination="VvK-kW-I0C" id="HDI-2e-xUn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7T-PQ-dlO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psN-OL-tHn">
+                            <rect key="frame" x="250" y="17" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="6rX-DW-eqG"/>
+                                <constraint firstAttribute="height" constant="30" id="9tU-P8-EhG"/>
+                            </constraints>
+                            <state key="normal" title="Edit">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnEditClicked:" destination="-1" eventType="touchUpInside" id="tEA-Mf-Fgq"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28c-Y1-D8Y">
+                            <rect key="frame" x="0.0" y="63" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="UAK-ci-3m5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvK-kW-I0C">
+                            <rect key="frame" x="95" y="21.5" width="130" height="21"/>
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20.999999999999972" id="BOL-6g-z4Z"/>
+                                <constraint firstAttribute="width" constant="130" id="nof-hU-8se"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylh-Gz-wLY">
+                            <rect key="frame" x="10" y="12" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="4G5-Af-kMK"/>
+                                <constraint firstAttribute="height" constant="40" id="DGQ-MN-MDf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="makent1" family="makent1" pointSize="23"/>
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="e"/>
+                            <connections>
+                                <action selector="btnbackClicked:" destination="-1" eventType="touchUpInside" id="bT8-57-4OL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VvK-kW-I0C" firstAttribute="centerY" secondItem="d7T-PQ-dlO" secondAttribute="centerY" id="1tx-JT-qKb"/>
+                        <constraint firstAttribute="height" constant="64" id="2CE-Li-wCM"/>
+                        <constraint firstAttribute="trailing" secondItem="psN-OL-tHn" secondAttribute="trailing" constant="10" id="EsC-Qe-sIt"/>
+                        <constraint firstItem="psN-OL-tHn" firstAttribute="centerY" secondItem="d7T-PQ-dlO" secondAttribute="centerY" id="Fsf-ye-Kaq"/>
+                        <constraint firstAttribute="bottom" secondItem="28c-Y1-D8Y" secondAttribute="bottom" id="Sya-bg-FhG"/>
+                        <constraint firstAttribute="trailing" secondItem="28c-Y1-D8Y" secondAttribute="trailing" id="Uzu-0a-d8a"/>
+                        <constraint firstItem="Ylh-Gz-wLY" firstAttribute="centerY" secondItem="d7T-PQ-dlO" secondAttribute="centerY" id="hJW-dd-H3R"/>
+                        <constraint firstItem="Ylh-Gz-wLY" firstAttribute="leading" secondItem="d7T-PQ-dlO" secondAttribute="leading" constant="10" id="hN1-1g-K2s"/>
+                        <constraint firstItem="28c-Y1-D8Y" firstAttribute="leading" secondItem="d7T-PQ-dlO" secondAttribute="leading" id="m5j-do-HMj"/>
+                        <constraint firstItem="VvK-kW-I0C" firstAttribute="centerX" secondItem="d7T-PQ-dlO" secondAttribute="centerX" id="zwa-XN-zc4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMv-M1-4Bi">
+                    <rect key="frame" x="100" y="431" width="120" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.37647058820000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="6aR-jn-ayM"/>
+                        <constraint firstAttribute="height" constant="44" id="CAx-Td-shX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <state key="normal" title="Add Photo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnAddPhotosClicked:" destination="-1" eventType="touchUpInside" id="emT-kY-e2V"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ng4-12-udM">
+                    <rect key="frame" x="0.0" y="63" width="320" height="363"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="I5e-Sl-26U">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ng4-12-udM" secondAttribute="bottom" constant="54" id="2A1-fB-GFA"/>
+                <constraint firstItem="Ng4-12-udM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="43T-UL-nfn"/>
+                <constraint firstAttribute="trailing" secondItem="Ng4-12-udM" secondAttribute="trailing" id="7c7-ba-9a6"/>
+                <constraint firstItem="wMv-M1-4Bi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ll9-A9-GmP"/>
+                <constraint firstItem="d7T-PQ-dlO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hE4-ON-MYi"/>
+                <constraint firstAttribute="bottom" secondItem="wMv-M1-4Bi" secondAttribute="bottom" constant="5" id="lnw-A4-vka"/>
+                <constraint firstItem="Ng4-12-udM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="63" id="lxN-iT-HzL"/>
+                <constraint firstItem="d7T-PQ-dlO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x0L-Qg-zPr"/>
+                <constraint firstAttribute="trailing" secondItem="d7T-PQ-dlO" secondAttribute="trailing" id="xoe-D9-1zT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

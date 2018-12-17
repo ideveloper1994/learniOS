@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+        <array key="arheb1.ttf">
+            <string>makent1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditPriceVC" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="animatedLoader" destination="o4R-Pl-6Qu" id="TuB-fa-Eym"/>
+                <outlet property="btnChangeCurrency" destination="Gkv-Sd-TLj" id="Pf1-vT-1Dy"/>
+                <outlet property="btnSave" destination="KCU-be-gk4" id="1a1-ir-S4G"/>
+                <outlet property="lblCurrency" destination="6sY-hw-ohL" id="Zwl-An-Rch"/>
+                <outlet property="lblFixedPrice" destination="7nE-Tt-jBX" id="3gR-2i-yJc"/>
+                <outlet property="lblLearnMore" destination="kNj-sg-UmQ" id="Rlv-Mw-J4Q"/>
+                <outlet property="lblPriceTip" destination="DdO-R2-2kT" id="SDi-me-vW0"/>
+                <outlet property="lblTitle" destination="sHC-cx-1fh" id="gM9-D5-7J9"/>
+                <outlet property="txtFldPrice" destination="ON8-9s-7KR" id="1c6-38-0Cr"/>
+                <outlet property="view" destination="d6P-SU-XaT" id="pTp-Mo-K4B"/>
+                <outlet property="viewBottomHolder" destination="1eC-05-rpX" id="CvL-7t-KdR"/>
+                <outlet property="viewPriceHolder" destination="ZyF-Fg-1IC" id="AS8-Ma-5S3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d6P-SU-XaT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvs-dj-HDS">
+                    <rect key="frame" x="0.0" y="-2" width="46" height="43"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Q3o-Cz-eix"/>
+                        <constraint firstAttribute="height" constant="43" id="r0k-5U-7dR"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" cyan="0.63601952790000005" magenta="0.54206174610000002" yellow="0.50300586219999999" black="0.39172965789999997" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHC-cx-1fh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="T1i-SX-gfC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="16"/>
+                    <color key="textColor" red="0.2666666667" green="0.28235294119999998" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNk-eU-ulY">
+                    <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LHm-Yv-bQr"/>
+                        <constraint firstAttribute="width" constant="65" id="xAf-iv-QxS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="makent1" family="makent1" pointSize="23"/>
+                    <state key="normal" title="e">
+                        <color key="titleColor" red="1" green="0.056896551720000001" blue="0.16255387930000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBackTapped:" destination="-1" eventType="touchUpInside" id="Ihp-fm-l5a"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eC-05-rpX">
+                    <rect key="frame" x="0.0" y="381" width="320" height="29"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdO-R2-2kT">
+                            <rect key="frame" x="7" y="0.0" width="278" height="29"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Price tip: ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.3411764706" green="0.35294117650000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="₹4525">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.47209527132758627" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" per night based on demand and your listing's attributes">
+                                    <attributes>
+                                        <color key="NSColor" red="0.3411764706" green="0.35294117650000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwU-bi-zkE">
+                            <rect key="frame" x="287" y="1" width="31" height="27"/>
+                            <state key="normal" image="tip_icon.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uwU-bi-zkE" secondAttribute="trailing" constant="2" id="33D-Cx-V9U"/>
+                        <constraint firstAttribute="bottom" secondItem="uwU-bi-zkE" secondAttribute="bottom" constant="1" id="65z-jP-R8Q"/>
+                        <constraint firstItem="uwU-bi-zkE" firstAttribute="leading" secondItem="DdO-R2-2kT" secondAttribute="trailing" constant="2" id="Dyx-Sy-KZR"/>
+                        <constraint firstAttribute="bottom" secondItem="DdO-R2-2kT" secondAttribute="bottom" id="eph-Y0-puL"/>
+                        <constraint firstItem="DdO-R2-2kT" firstAttribute="top" secondItem="1eC-05-rpX" secondAttribute="top" id="iv4-aR-UTQ"/>
+                        <constraint firstItem="uwU-bi-zkE" firstAttribute="leading" secondItem="DdO-R2-2kT" secondAttribute="trailing" constant="2" id="nBW-B4-WVY"/>
+                        <constraint firstItem="uwU-bi-zkE" firstAttribute="top" secondItem="1eC-05-rpX" secondAttribute="top" constant="1" id="tKY-rm-GhO"/>
+                        <constraint firstItem="DdO-R2-2kT" firstAttribute="leading" secondItem="1eC-05-rpX" secondAttribute="leading" constant="7" id="ugE-on-KFe"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCU-be-gk4">
+                    <rect key="frame" x="272" y="10" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="48U-BP-6mW"/>
+                        <constraint firstAttribute="height" constant="30" id="gtI-Pi-rTl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="15"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" red="1" green="0.056896551720000001" blue="0.16255387930000001" alpha="0.90486480499999999" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSaveTapped:" destination="-1" eventType="touchUpInside" id="9eW-VT-fwD"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4R-Pl-6Qu" customClass="FLAnimatedImageView">
+                    <rect key="frame" x="250" y="10.5" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Nc1-EI-Uhk"/>
+                        <constraint firstAttribute="width" constant="60" id="x1K-k3-lDb"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dea-lm-eyS">
+                    <rect key="frame" x="12" y="111" width="297" height="167"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyF-Fg-1IC">
+                            <rect key="frame" x="65" y="63" width="168" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="₹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sY-hw-ohL">
+                                    <rect key="frame" x="0.0" y="0.0" width="49" height="51"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="26"/>
+                                    <color key="textColor" red="0.3411764706" green="0.35294117650000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON8-9s-7KR">
+                                    <rect key="frame" x="50" y="0.0" width="118" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="textFieldDidChangeWithTextField:" destination="-1" eventType="editingChanged" id="dUh-8Q-dhX"/>
+                                        <outlet property="delegate" destination="-1" id="nkV-up-dGz"/>
+                                    </connections>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi5-fe-6lU">
+                                    <rect key="frame" x="48" y="0.0" width="2" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="7Ub-Pd-aR0"/>
+                                <constraint firstAttribute="width" constant="168" id="qiP-dx-cCL"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixed price is your default nightly rate." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-Tt-jBX">
+                            <rect key="frame" x="11" y="0.0" width="275" height="20.5"/>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="16"/>
+                            <color key="textColor" red="0.3411764706" green="0.35294117650000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkv-Sd-TLj">
+                            <rect key="frame" x="76" y="125" width="168" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="Ixq-L3-63m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="15"/>
+                            <state key="normal" title="Change Currency">
+                                <color key="titleColor" red="1" green="0.056896551720000001" blue="0.16255387930000001" alpha="0.85006648939999996" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onChangeCurrencyTapped:" destination="-1" eventType="touchUpInside" id="dog-qW-rme"/>
+                            </connections>
+                        </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNj-sg-UmQ">
+                            <rect key="frame" x="96" y="28.5" width="105" height="20.5"/>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="16"/>
+                            <color key="textColor" red="1" green="0.056896551720000001" blue="0.16255387930000001" alpha="0.85006648939999996" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kNj-sg-UmQ" firstAttribute="top" secondItem="7nE-Tt-jBX" secondAttribute="bottom" constant="8" id="1RP-IS-Frb"/>
+                        <constraint firstAttribute="trailing" secondItem="Gkv-Sd-TLj" secondAttribute="trailing" constant="53" id="5qN-yo-hvE"/>
+                        <constraint firstItem="ZyF-Fg-1IC" firstAttribute="top" secondItem="kNj-sg-UmQ" secondAttribute="bottom" constant="14" id="9VP-Vs-ju1"/>
+                        <constraint firstItem="7nE-Tt-jBX" firstAttribute="top" secondItem="dea-lm-eyS" secondAttribute="top" id="FCO-X3-Y3N"/>
+                        <constraint firstItem="Gkv-Sd-TLj" firstAttribute="top" secondItem="ZyF-Fg-1IC" secondAttribute="bottom" constant="12" id="Uic-c6-eNJ"/>
+                        <constraint firstItem="Gkv-Sd-TLj" firstAttribute="leading" secondItem="dea-lm-eyS" secondAttribute="leading" constant="76" id="bx5-kZ-LyD"/>
+                        <constraint firstItem="ZyF-Fg-1IC" firstAttribute="top" secondItem="kNj-sg-UmQ" secondAttribute="bottom" constant="14" id="eCK-QV-tuW"/>
+                        <constraint firstItem="kNj-sg-UmQ" firstAttribute="leading" secondItem="dea-lm-eyS" secondAttribute="leading" constant="96" id="ijP-8T-Hno"/>
+                        <constraint firstItem="kNj-sg-UmQ" firstAttribute="top" secondItem="7nE-Tt-jBX" secondAttribute="bottom" constant="8" id="o6W-pf-5ez"/>
+                        <constraint firstItem="7nE-Tt-jBX" firstAttribute="leading" secondItem="dea-lm-eyS" secondAttribute="leading" constant="11" id="qiu-4Y-2QO"/>
+                        <constraint firstAttribute="trailing" secondItem="kNj-sg-UmQ" secondAttribute="trailing" constant="96" id="svz-VH-eDK"/>
+                        <constraint firstAttribute="trailing" secondItem="7nE-Tt-jBX" secondAttribute="trailing" constant="11" id="tkM-5D-x9s"/>
+                        <constraint firstItem="ZyF-Fg-1IC" firstAttribute="centerX" secondItem="dea-lm-eyS" secondAttribute="centerX" id="vgu-g7-6Pd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1eC-05-rpX" firstAttribute="top" secondItem="dea-lm-eyS" secondAttribute="bottom" constant="103" id="8XO-Rh-QMn"/>
+                <constraint firstItem="dea-lm-eyS" firstAttribute="leading" secondItem="d6P-SU-XaT" secondAttribute="leading" constant="12" id="9IL-nd-qWl"/>
+                <constraint firstItem="1eC-05-rpX" firstAttribute="leading" secondItem="d6P-SU-XaT" secondAttribute="leading" id="AXC-1e-Vqq"/>
+                <constraint firstItem="o4R-Pl-6Qu" firstAttribute="centerY" secondItem="sHC-cx-1fh" secondAttribute="centerY" id="BCi-XF-Oh9"/>
+                <constraint firstAttribute="trailing" secondItem="sHC-cx-1fh" secondAttribute="trailing" id="BHy-Tq-cAl"/>
+                <constraint firstItem="pNk-eU-ulY" firstAttribute="top" secondItem="d6P-SU-XaT" secondAttribute="top" id="EMg-9s-skA"/>
+                <constraint firstItem="Nvs-dj-HDS" firstAttribute="leading" secondItem="d6P-SU-XaT" secondAttribute="leading" id="LXO-wJ-bL4"/>
+                <constraint firstAttribute="trailing" secondItem="o4R-Pl-6Qu" secondAttribute="trailing" constant="10" id="LlC-GM-tJT"/>
+                <constraint firstItem="Nvs-dj-HDS" firstAttribute="top" secondItem="d6P-SU-XaT" secondAttribute="top" constant="-2" id="MeH-uj-T2m"/>
+                <constraint firstItem="KCU-be-gk4" firstAttribute="centerY" secondItem="sHC-cx-1fh" secondAttribute="centerY" id="OSc-O3-mRA"/>
+                <constraint firstItem="sHC-cx-1fh" firstAttribute="top" secondItem="d6P-SU-XaT" secondAttribute="top" id="YvW-kB-qaZ"/>
+                <constraint firstAttribute="trailing" secondItem="dea-lm-eyS" secondAttribute="trailing" constant="11" id="aPc-s2-TfU"/>
+                <constraint firstAttribute="trailing" secondItem="1eC-05-rpX" secondAttribute="trailing" id="f5T-Xv-PN3"/>
+                <constraint firstItem="dea-lm-eyS" firstAttribute="top" secondItem="pNk-eU-ulY" secondAttribute="bottom" constant="61" id="gBv-q9-ZKX"/>
+                <constraint firstItem="sHC-cx-1fh" firstAttribute="leading" secondItem="d6P-SU-XaT" secondAttribute="leading" id="iyF-0S-SBQ"/>
+                <constraint firstAttribute="bottom" secondItem="1eC-05-rpX" secondAttribute="bottom" constant="70" id="ug1-wt-Muz"/>
+                <constraint firstItem="pNk-eU-ulY" firstAttribute="leading" secondItem="d6P-SU-XaT" secondAttribute="leading" id="ujG-bE-wtN"/>
+                <constraint firstAttribute="trailing" secondItem="KCU-be-gk4" secondAttribute="trailing" constant="2" id="y0G-id-Dah"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="tip_icon.png" width="16" height="16"/>
+    </resources>
+</document>
