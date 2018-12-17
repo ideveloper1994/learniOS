@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FilterCell" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkl-SW-C4j">
+                        <rect key="frame" x="20" y="15.5" width="225" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="BnF-PC-oEY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49Z-6a-zWI" customClass="CheckBoxButton" customModule="Arheb" customModuleProvider="target">
+                        <rect key="frame" x="265" y="10" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Mqj-bY-tsv"/>
+                            <constraint firstAttribute="height" constant="35" id="arE-Tn-U0M"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.65098039220000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gkl-SW-C4j" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VDw-JS-Ro2"/>
+                    <constraint firstItem="49Z-6a-zWI" firstAttribute="leading" secondItem="Gkl-SW-C4j" secondAttribute="trailing" constant="20" id="kuR-uZ-gcX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="49Z-6a-zWI" secondAttribute="trailing" constant="20" id="2CX-8Y-om3"/>
+                <constraint firstItem="Gkl-SW-C4j" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="20" id="U2c-Zy-J8D"/>
+                <constraint firstItem="49Z-6a-zWI" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="iC8-Ov-MBw"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCheck" destination="49Z-6a-zWI" id="dnw-M1-qLL"/>
+                <outlet property="lblAmenities" destination="Gkl-SW-C4j" id="GfV-Bw-Wmm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

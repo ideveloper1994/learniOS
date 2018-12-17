@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Filter_CVC" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-o7-w0X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We couldn't find any listings. Try removing your filters." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifm-GZ-oys">
+                                <rect key="frame" x="34" y="32" width="252" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="2Rj-mJ-iXo"/>
+                                    <constraint firstAttribute="width" constant="252" id="4X7-I5-1pm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="dv8-JS-kfN"/>
+                                    <constraint firstAttribute="height" constant="49" id="i4u-ZE-aQi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="17"/>
+                                <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LY-yM-N83">
+                                <rect key="frame" x="34" y="100" width="172" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="5PB-bx-8uI"/>
+                                    <constraint firstAttribute="height" constant="39" id="9TW-xj-eVv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="9Wk-0W-HY2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="lq9-ID-xUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="17"/>
+                                <state key="normal" title="Remove all filters">
+                                    <color key="titleColor" red="0.16078431369999999" green="0.59607843140000005" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.16078431369999999" green="0.59607843140000005" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ifm-GZ-oys" firstAttribute="top" secondItem="wcs-o7-w0X" secondAttribute="top" constant="32" id="Jmp-Ze-aar"/>
+                            <constraint firstItem="7LY-yM-N83" firstAttribute="top" secondItem="ifm-GZ-oys" secondAttribute="bottom" constant="19" id="cJZ-gd-0nz"/>
+                            <constraint firstItem="ifm-GZ-oys" firstAttribute="centerX" secondItem="wcs-o7-w0X" secondAttribute="centerX" id="k2P-mQ-Lpm"/>
+                            <constraint firstItem="7LY-yM-N83" firstAttribute="leading" secondItem="ifm-GZ-oys" secondAttribute="leading" id="zRa-UU-uEr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wcs-o7-w0X" secondAttribute="bottom" id="3cC-lB-FKc"/>
+                <constraint firstItem="wcs-o7-w0X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mfm-eW-oas"/>
+                <constraint firstItem="wcs-o7-w0X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dGr-V7-6w9"/>
+                <constraint firstAttribute="trailing" secondItem="wcs-o7-w0X" secondAttribute="trailing" id="uP5-kc-4ID"/>
+            </constraints>
+            <connections>
+                <outlet property="btnRemoveFilter" destination="7LY-yM-N83" id="uYI-5L-cfV"/>
+                <outlet property="lblCantList" destination="ifm-GZ-oys" id="Uxu-II-YBT"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="102.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

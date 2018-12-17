@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripsCell" customModule="Arheb" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="TripsCell" id="txa-wZ-Psx" customClass="TripsCell" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogo_grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="6mM-Cn-QM2">
+                        <rect key="frame" x="27" y="12" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="bnY-91-od4"/>
+                            <constraint firstAttribute="width" constant="100" id="dSU-jr-KO3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX1-gr-jpQ">
+                        <rect key="frame" x="0.0" y="108" width="155" height="45"/>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="14"/>
+                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZX1-gr-jpQ" secondAttribute="bottom" constant="2" id="4zD-ji-WYz"/>
+                <constraint firstAttribute="trailing" secondItem="ZX1-gr-jpQ" secondAttribute="trailing" id="IlJ-qr-OAK"/>
+                <constraint firstItem="ZX1-gr-jpQ" firstAttribute="top" secondItem="txa-wZ-Psx" secondAttribute="top" constant="108" id="Ls0-uU-xdg"/>
+                <constraint firstItem="ZX1-gr-jpQ" firstAttribute="leading" secondItem="txa-wZ-Psx" secondAttribute="leading" id="XB8-35-LB6"/>
+                <constraint firstItem="6mM-Cn-QM2" firstAttribute="top" secondItem="txa-wZ-Psx" secondAttribute="top" constant="12" id="Z4f-3M-jwi"/>
+                <constraint firstItem="6mM-Cn-QM2" firstAttribute="centerX" secondItem="txa-wZ-Psx" secondAttribute="centerX" id="ith-zT-ME6"/>
+            </constraints>
+            <size key="customSize" width="155" height="155"/>
+            <connections>
+                <outlet property="imageView" destination="6mM-Cn-QM2" id="wsC-Yf-uRl"/>
+                <outlet property="lblTripDetail" destination="ZX1-gr-jpQ" id="A7z-9S-nkN"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="applogo_grey.png" width="16" height="16"/>
+    </resources>
+</document>

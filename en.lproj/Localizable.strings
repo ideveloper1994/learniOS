@@ -1,0 +1,489 @@
+/* 
+  Localizable.strings
+  Arheb
+
+  Created on 6/19/17.
+  Copyright © 2017 Arheb. All rights reserved.
+*/
+
+"View and edit profile" = "View and edit profile";
+"Switch to Travel" = "Switch to Travel";
+"Switch to Host" = "Switch to Host";
+"Settings" = "Settings";
+"Help & Support" = "Help & Support";
+"Why host" = "Why host";
+"Language" = "Language";
+
+"Switching to Hosting" = "Switching to Hosting";
+"Switching to Travelling" = "Switching to Travelling";
+"Member Since" = "Member Since";
+
+//MARK: Settings View options
+"Currency" = "Currency";
+"Payout Methods" = "Payout Methods";
+"Terms of Service" = "Terms of Service";
+"Version " = "Version ";
+"Logout" = "Logout";
+
+//MARK: Payout view
+"Address" = "Address";
+"City" = "City";
+"State" = "State";
+"Postal Code" = "Postal Code";
+"Country" = "Country";
+"Payout" = "Payout";
+"Address of Payout" = "Address of Payout";
+"PayPal Email ID" = "PayPal Email ID";
+
+//Languages
+
+"English" = "English";
+"Arabic" = "Arabic";
+
+//MARK: LoginVC
+"Forgot Password" = "Forgot Password";
+"Log in" = "Log in";
+"EMAIL ADDRESS" = "EMAIL ADDRESS";
+"PASSWORD" = "PASSWORD";
+"Show" = "Show";
+"Remember me" = "Remember me";
+"Error" = "Error";
+
+//MARK: Main
+"Welcome to Makent" = "Welcome to Makent";
+"Continue with Facebook" = "Continue with Facebook";
+"Continue with Google" = "Continue with Google";
+"Create Account" = "Create Account";
+"HomeInfo" = "By signing up.I agree to Makent's Terms of sevices,Nondescriminination Policy, Payments Terms of Service, Privacy Policy, and Host Guarantee Terms.";
+"Help & Support" = "Help & Support";
+
+//MARK: SignUpVC
+"What's your name?" = "What's your name?";
+"FIRST NAME" = "FIRST NAME";
+"LAST NAME" = "LAST NAME";
+
+//MARK: SignUpEmailVC
+"And, your email?" = "And, your email?";
+
+//MARK: CreatePasswordVC
+"Create a password" = "Create a password";
+"Hide" = "Hide";
+
+//MARK: BirthdayVC
+"When is your birthday?" = "When is your birthday?";
+"birthAgeInfo" = "You must be at least 18 years old to use Arheb. Other people won't see your birthday.";
+"BIRTHDAY" = "BIRTHDAY";
+"Done" = "Done";
+
+//MARK: ExploreVC
+"CantFineListing" = "We couldn't find any listings. Try removing your filters.";
+"Remove all filters" = "Remove all filters";
+"MAP" = "MAP";
+"FILTERS" = "FILTERS";
+ "Choose a list" = "Choose a list";
+"Listing" = "Listing";
+"Review" = "Review";
+"Reviews" = "Reviews";
+"Anywhere" = "Anywhere";
+"guest" = "guest";
+"guests" = "guests";
+"Anytime" = "Anytime";
+"Nothing saved yet" = "Nothing saved yet";
+
+
+//MARK: SearchVC
+"Where To?" = "Where To?";
+"Clear" = "Clear";
+"Nearby" = "Nearby";
+"Popular Destinations" = "Popular Destinations";
+"Location Permission" = "Location Permission";
+"accresslocation" = "Please grant Makent access to your location through settings > privacy > location services.";
+"Cancel" = "Cancel";
+"Save" = "Save";
+
+//MARK: GuestVC
+"Guests" = "Guests";
+
+//MARK: EditProfileVC
+"Edit Profile" = "Edit Profile";
+"Enter First name" = "Enter First name";
+"Enter Last name" = "Enter Last name";
+"About me" = "About me";
+"Edit" = "Edit";
+"Gender" = "Gender";
+"Select Gender" = "Select Gender";
+"Birth Date" = "Birth Date";
+"Select Birth date" = "Select Birth date";
+"Email" = "Email";
+"Enter Email" = "Enter Email";
+"Location" = "Location";
+"Enter Location" = "Enter Location";
+"School" = "School";
+"Enter School" = "Enter School";
+"Work" = "Work";
+"Enter Work" = "Enter Work";
+"Not Specified" = "Not Specified";
+"Male" = "Male";
+"Female" = "Female";
+"Other" = "Other";
+"Take Photo" = "Take Photo";
+"Choose Photo" = "Choose Photo";
+"Device has no camera" = "Device has no camera";
+"OK" = "OK";
+"Save Failed" = "Save Failed";
+"Failed to save image" = "Failed to save image";
+"First name" = "First name";
+"Last name" = "Last name";
+
+//MARK: LoadWebView
+"Title" = "Title";
+
+//MARK: AddPayoutVC
+"Submit" = "Submit";
+"Payouts" = "Payouts";
+"Please enter valid email Id" = "Please enter valid email Id";
+
+//MARK: ProfilePaymentListVC
+"Delete" = "Delete";
+"Make Default" = "Make Default";
+"Add Payout Method" = "Add Payout Method";
+
+//MARK: AddWishListItemVC
+"Create a list" = "Create a list";
+"Privacy" = "Privacy";
+"Visible to every one" = "Visible to everyone and included on your public Makent profile.";
+"Public" = "Public";
+"Visiblie To friends" = "Visible only to you and friends you invite";
+"Private" = "Private";
+"Create >" = "Create >";
+
+//MARK: ProductDetail_VC
+"Entire Home" = "Entire Home";
+"Hosted by" = "Hosted by";
+"room" = "room";
+"bed" = "bed";
+"bath" = "bath";
+"About this home" = "About this home";
+"Similar Listing" = "Similar Listing";
+"Flexible Cancellation Policy" = "Flexible Cancellation Policy";
+"Check Availability" = "Check Availability";
+"Cancellation Policy" = "Cancellation Policy";
+"Contact to Host" = "Contact to Host";
+"Additional Prices" = "Additional Prices";
+"Read All" = "Read All";
+"Extra People" = "Extra People";
+"Weekly Price" = "Weekly Price";
+"Monthly Price" = "Monthly Price";
+"Security Deposit" = "Security Deposit";
+"Cleaning Fee" = "Cleaning Fee";
+
+//MARK: SavedVC
+"Saved" = "Saved";
+
+//MARK: Saved Detail List
+"Title" = "Title";
+"Wish List Name..." = "Wish List Name...";
+"Delete This List" = "Delete This List";
+"Make Private" = "Make Private";
+"Make Public" = "Make Public";
+"available home" = "available home";
+"Invite Friends" = "Invite Friends";
+"Request to book" = "Request to book";
+"Instant Book" = "Instant Book";
+"per night" = "per night";
+
+//MARK: EditPriceVC
+"Edit Price" = "Edit Price";
+"Price tip" = "Price tip: ₹4525 per night based on demand and your listing's attributes";
+"Fixed price is your default nightly rate." = "Fixed price is your default nightly rate.";
+"Change Currency" = "Change Currency";
+"Learn More" = "Learn More";
+
+//MARK: SSCalendarTimeSelector
+"Saving" = "Saving";
+"Available" = "Available";
+"Blocked" = "Blocked";
+"     Nightly Price" = "     Nightly Price";
+"Save Changes" = "Save Changes";
+"Next" = "Next";
+"No Listing" = "No Listing";
+"You have no listing right now." = "You have no listing right now.";
+
+//MARK: ProprtyTypeVC
+"Property Type" = "Property Type";
+"Nice what type of plce" = "Nice! What type of place is in your entire home in?";
+"Apartment" = "Apartment";
+"House" = "House";
+"Bed & Break Fast" = "Bed & Break Fast";
+"Loft" = "Loft";
+"Townhouse" = "Townhouse";
+"Condominium" = "Condominium";
+"Bungalow" = "Bungalow";
+"Cabin" = "Cabin";
+"Villa" = "Villa";
+"Castle" = "Castle";
+"Dorm" = "Dorm";
+"Treehouse" = "Treehouse";
+"Boat" = "Boat";
+"Plane" = "Plane";
+"Camper/RV" = "Camper/RV";
+"Lgloo" = "Lgloo";
+"Lighthouse" = "Lighthouse";
+"Yurt" = "Yurt";
+"Tipi" = "Tipi";
+"Cave" = "Cave";
+"Island" = "Island";
+"Chalet" = "Chalet";
+"Earth House" = "Earth House";
+"Hut" = "Hut";
+"Train" = "Train";
+"Tent" = "Tent";
+"Your entire home" = "Your entire home";
+"A single room in your home" = "A single room in your home";
+"A couch, airbed,etc" = "A couch, airbed,etc";
+
+//MARK: ListSpaceVCViewController
+"List your space" = "List your space";
+"What type of space do you want to list?" = "What type of space do you want to list?";
+"Entire Home" = "Entire Home";
+"Private Room" = "Private Room";
+"Shared Room" = "Shared Room";
+
+//MARK: HostListingVC
+"Your Listings" = "Your Listings";
+"Listed" = "Listed";
+"Unlisted" = "Unlisted";
+
+//MARK: LocationVC
+"What city is your appartment located in?" = "What city is your appartment located in?";
+"Location Found" = "Location Found";
+"Exact Location Not Found" = "Exact Location Not Found";
+"Would you like to manually pin this listing's location on a map?" = "Would you like to manually pin this listing's location on a map?";
+"Edit Address" = "Edit Address";
+"Pin on Map" = "Pin on Map";
+
+//MARK: EditLocationVC
+"Street" = "Street";
+"Apt / Building" = "Apt / Building";
+"Zip" = "Zip";
+"Close" = "Close";
+
+//MARK: RoomsAndBedsVC (Listing)
+"Rooms And Beds" = "Rooms And Beds";
+"Room Type" = "Room Type";
+"Home Type" = "Home Type";
+"Beds" = "Beds";
+"Bathrooms" = "Bathrooms";
+"Max Guests" = "Max Guests";
+"Entire Home" = "Entire Home";
+"Private Room" = "Private Room";
+"Shared Room" = "Shared Room";
+"1Yurt" = "1Yurt";
+
+//MARK: RoomsAndBedVC (Listing)
+"No" = "No";
+"Bedrooms" = "Bedrooms";
+"MaxGuest" = "MaxGuest";
+"Just a little more about your house..." = "Just a little more about your house...";
+"Next" = "Next";
+"more steps to list your space" = "more steps to list your space";
+"Finish My Listing" = "Finish My Listing";
+"You’ve created your listing" = "You’ve created your listing";
+"Rooms & Bed" = "Rooms & Bed";
+
+//MARK: OptionalDetailVC (Listing)
+"Long-Term & Additional Prices" = "Long-Term & Additional Prices";
+"About This Listing" = "About This Listing";
+"Amenities" = "Amenities";
+"Rooms & Beds" = "Rooms & Beds";
+"Policy" = "Policy";
+"Price" = "Price";
+"Flexible" = "Flexible";
+"Moderate" = "Moderate";
+"Strict" = "Strict";
+
+//MARK: RoomDetailsVC (Listing)
+"Option Details" = "Option Details";
+"Preview" = "Preview";
+"steps to list" = "steps to list";
+"Describe your place" = "Describe your place";
+"Set Price" = "Set Price";
+"Set Address" = "Set Address";
+"Set House Rules" = "Set House Rules";
+"Set Book Type" = "Set Book Type";
+"Summarize the highlights of your listing" = "Summarize the highlights of your listing";
+"Try our suggested price to start" = "Try our suggested price to start";
+"Unnamed Road" = "Unnamed Road";
+"Kerlapal" = "Kerlapal";
+"Chhatisgarh" = "Chhatisgarh";
+"India" = "India";
+"Guests agree to rules before booking" = "Guests agree to rules before booking";
+"How guests can book" = "How guests can book";
+"House Rules" = "House Rules";
+"How do you expect guest to behave?" = "How do you expect guest to behave?";
+"Instant Book" = "Instant Book";
+"Request to book" = "Request to book";
+"Device has no camera" = "Device has no camera";
+"Take Photo" = "Take Photo";
+"Choose photo" = "Choose photo";
+"cancel" = "cancel";
+
+//MARK: AboutListingVC (Listing)
+"Details" = "Details";
+"The Space" = "The Space";
+"Guest Access" = "Guest Access";
+"Interaction with Guests" = "Interaction with Guests";
+"you_can_add_more_information" = "You can add more information about what makes your space unique.";
+"travelers_know" = "Let travelers know what parts of the space they’ll be able to access.";
+"tell_guests_if_youll_be_available" = "Tell guests if you’ll be available to offer help throughout their stay";
+"Overview" = "Overview";
+"Getting Around" = "Getting Around";
+"show_people_looking_at_your_listing_page" = "Show people looking at your listing page what makes your neighborhood unique.";
+"you_can_let_travelers_know" = "You can let travelers know if your listing is close to public transportation(or far from it). You can also mention nearby parking options.";
+"Other Things to Note" = "Other Things to Note";
+"travelers_know_if_there_are_other_details" = "Let travelers know if there are other details that will impact their stay.";
+"How do you expect your guests to behave?" = "How do you expect your guests to behave?";
+"Details" = "Details";
+"The Neighborhood" = "The Neighborhood";
+"Extra Details" = "Extra Details";
+
+//MARK: EditTitleAndSummary (Listing)
+"Characters left" = "Characters left";
+
+//MARK: DescribePlaceVC (Listing)
+"Add a title" = "Add a title";
+"Write a summary" = "Write a summary";
+"Be clear and descriptive." = "Be clear and descriptive.";
+"Message to travel" = "Tell travelers what you love about the space. You can include details about the decor, the amenities it includes, and the neighborhood.";
+"Edit Title" = "Edit Title";
+"Edit Summary" = "Edit Summary";
+
+//MARK: Booking Type (Listing)
+"Booking Type" = "Booking Type";
+
+//MARK: AdditionalPriceVC (Listing)
+"Additional Price" = "Additional Price";
+"Weekly Price" = "Weekly Price";
+"Monthly Price" = "Monthly Price";
+"Additional guests" = "Additional guests";
+"For each guest after" = "For each guest after";
+"Security deposit" = "Security deposit";
+"Weekend pricing" = "Weekend pricing";
+"Long-term prices" = "Long-term prices";
+"Additional Pricing Options" = "Additional Pricing Options";
+
+//MARK: Add Photos(Listing)
+"Add Photos" = "Add Photos";
+
+//MARK: Reservation Detail View (Reservation)
+"Yes" = "Yes";
+"Decline" = "Decline";
+"Discuss" = "Discuss";
+"Pending" = "Pending";
+"Accepted" = "Accepted";
+"Check-in" = "Check-in";
+"Checkout" = "Checkout";
+"Guests\n1 guest" = "Guests\n1 guest";
+"TotalCost" = "TotalCost";
+"Cancel" = "Cancel";
+"Message History" = "Message History";
+"Declined" = "Declined";
+"Cancelled" = "Cancelled";
+"Pre-Accepted" = "Pre-Accepted";
+"Cancel Reservation" = "Cancel Reservation";
+"Why are you Cancelling?" = "Why are you Cancelling?";
+"My place is longer available" = "My place is longer available";
+"I want to offer" = "I want to offer a different listing or change the price";
+"My place needs maintenance" = "My place needs maintenance";
+"I have an extenuating circumstance" = "I have an extenuating circumstance";
+"My guest needs to cancel" = "My guest needs to cancel";
+"Why are you declining?" = "Why are you declining?";
+"Dates are not available" = "Dates are not available";
+"I do not feel comfortable with this guest" = "I do not feel comfortable with this guest";
+"My listing is not a good" = "My listing is not a good to fit for the guest's needs (children, pets, ets.)";
+"I'm waiting for a more attractive reservation" = "I'm waiting for a more attractive reservation";
+"The guest is asking for different dates than the ones selected in this request" = "The guest is asking for different dates than the ones selected in this request";
+"This message is spam" = "This message is spam";
+"I no longer need accommodations" = "I no longer need accommodations";
+"My travel dates changed" = "My travel dates changed";
+"I made the reservation by accident" = "I made the reservation by accident";
+"My host needs to cancel" = "My host needs to cancel";
+"I’m uncomfortable with the host" = "I’m uncomfortable with the host";
+"The place isn't what I was expecting" = "The place isn't what I was expecting";
+"Customer Receipt" = "Customer Receipt";
+"Additional Guest fee" = "Additional Guest fee";
+"Security fee" = "Security fee";
+"Cleaning fee" = "Cleaning fee";
+
+//TotalCostVC (Reservation)
+"Payment Breakdown " = "Payment Breakdown ";
+
+//CancelReservationVC (Reservation)
+"Cancel This Reservation" = "Cancel This Reservation";
+
+//MARK: ReservationHistoryVC
+"Inquiry" = "Inquiry";
+"Payment" = "Payment";
+"Pre-Approve" = "Pre-Approve";
+"Write a Message" = "Write a Message";
+"send" = "send";
+
+//MARK: BookingVC
+"3 steps left" = "3 steps left";
+"2 steps left" = "2 steps left";
+"Add" = "Add";
+"Read" = "Read";
+"Agreed" = "Agreed";
+"Continue" = "Continue";
+"steps left" = "steps left";
+"Host Message" = "Host Message";
+
+//MARK: Booking Cell
+"Nights" = "Nights";
+"See price breakdown" = "See price breakdown";
+"Steps left to book" = "Steps left to book";
+
+//MARK: PreAccept (Reservation)
+"Type optional message to guest..." = "Type optional message to guest...";
+"Pre-Accept this request" = "Pre-Accept this request";
+"Pre-Accept" = "Pre-Accept";
+"Book now" = "Book now";
+
+//MARK: HostInbox (Reservation)
+"You have" = "You have";
+"reservation" = "reservation";
+"reservations" = "reservations";
+"You have no reservation" = "You have no reservation";
+
+//MARK: ReservationHistory (Reservation)
+"Archive" = "Archive";
+"Help" = "Help";
+"Julian" = "Julian";
+
+//MARK: Filter_CVC
+"Try removing your filters" = "We couldn't find any listings. Try removing your filters.";
+"Remove all filters" = "Remove all filters";
+
+//MARK: Explore_First_CVC
+"Clear All" = "Clear All";
+
+//MARK: PayoutListCell
+"Default" = "Default";
+
+//MARK: HouseRulesVC
+"Agree" = "Agree";
+
+//MARK: MoreCell
+"More" = "More";
+
+//MARK: ServicePriceCell
+"Service fee" = "Service fee";
+"This helps us run our platform" = "This helps us run our platform and offer services like 24/7 support on your trip.";
+
+//MARK: HostInboxCell
+"Pre-Accept" = "Pre-Accept";
+
+
+//MARK:- Error message
+"Server Error" = "Server Error, Please try again.";
+

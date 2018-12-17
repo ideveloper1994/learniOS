@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Light.otf">
+            <string>CircularAirPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ReservationDetailsCell" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julian" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S97-c6-NqU">
+                        <rect key="frame" x="20" y="0.0" width="141" height="77"/>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="17"/>
+                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun, 27 Sep 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBt-7J-RMl">
+                        <rect key="frame" x="159" y="0.0" width="141" height="77"/>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="16"/>
+                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="0.75925310280000002" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgY-hd-ec6">
+                        <rect key="frame" x="20" y="76" width="280" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.84776706560000004" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Wjb-6b-Gi0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_accessory" translatesAutoresizingMaskIntoConstraints="NO" id="ONy-qE-WL4">
+                        <rect key="frame" x="292" y="30" width="8" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ONy-qE-WL4" secondAttribute="height" multiplier="1:2" id="T78-IB-cWx"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="PBt-7J-RMl" secondAttribute="trailing" constant="12" id="0OB-TK-MEW"/>
+                    <constraint firstItem="S97-c6-NqU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="C9P-cg-b0Y"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PBt-7J-RMl" secondAttribute="bottom" constant="-8" id="Cuf-lV-14d"/>
+                    <constraint firstItem="S97-c6-NqU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="F1R-Go-zKw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S97-c6-NqU" secondAttribute="bottom" constant="-8" id="KAx-Hb-5mH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ONy-qE-WL4" secondAttribute="bottom" constant="23" id="TVr-0k-pH4"/>
+                    <constraint firstItem="PBt-7J-RMl" firstAttribute="leading" secondItem="S97-c6-NqU" secondAttribute="trailing" constant="-2" id="TqF-gZ-cMv"/>
+                    <constraint firstItem="S97-c6-NqU" firstAttribute="width" secondItem="PBt-7J-RMl" secondAttribute="width" id="UB4-bG-ZSQ"/>
+                    <constraint firstItem="PBt-7J-RMl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Wwt-S1-TNz"/>
+                    <constraint firstItem="ONy-qE-WL4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="Y9O-F9-cnD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ONy-qE-WL4" secondAttribute="trailing" constant="12" id="aBx-dC-NNk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HgY-hd-ec6" secondAttribute="trailing" constant="12" id="j8n-AC-tAf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HgY-hd-ec6" secondAttribute="bottom" constant="-8" id="rUw-vR-Y6H"/>
+                    <constraint firstItem="HgY-hd-ec6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="xup-N4-0vV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imghAccessory" destination="ONy-qE-WL4" id="MUb-7P-slZ"/>
+                <outlet property="lblDetails" destination="PBt-7J-RMl" id="hq0-vV-nC7"/>
+                <outlet property="lblTitleName" destination="S97-c6-NqU" id="pD1-d6-G4b"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cell_accessory" width="33" height="63"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Light.otf">
+            <string>CircularAirPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="additionalPriceCell" id="KGk-i7-Jjw" customClass="AdditionalPriceCell" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-Ok-uRN">
+                        <rect key="frame" x="15" y="9" width="304" height="33"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="lEt-pk-gM3"/>
+                            <constraint firstAttribute="height" constant="33" id="olg-U4-H4K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="21"/>
+                        <color key="textColor" red="0.3411764706" green="0.35294117650000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxA-ZG-PP7">
+                        <rect key="frame" x="15" y="46" width="304" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="AT1-Bc-Sy6"/>
+                            <constraint firstAttribute="width" constant="304" id="be5-Xm-0PY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="17"/>
+                        <color key="textColor" red="0.51372549020000002" green="0.53333333329999999" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oxA-ZG-PP7" firstAttribute="leading" secondItem="gKf-Ok-uRN" secondAttribute="leading" id="7C6-tj-DNe"/>
+                    <constraint firstItem="oxA-ZG-PP7" firstAttribute="top" secondItem="gKf-Ok-uRN" secondAttribute="top" constant="37" id="WaU-3a-6QQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gKf-Ok-uRN" secondAttribute="trailing" constant="1" id="GED-DM-y5g"/>
+                <constraint firstItem="gKf-Ok-uRN" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="a70-EG-WVt"/>
+                <constraint firstItem="gKf-Ok-uRN" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="9" id="j1b-BQ-miL"/>
+            </constraints>
+            <connections>
+                <outlet property="lblSubTitle" destination="oxA-ZG-PP7" id="l52-7A-epv"/>
+                <outlet property="lblTitle" destination="gKf-Ok-uRN" id="Glg-2u-EXh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

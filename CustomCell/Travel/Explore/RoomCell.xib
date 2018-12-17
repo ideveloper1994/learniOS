@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RoomCell" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RQR-Oh-Vmn">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="116"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MO-6i-tJg">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="3"/>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.59607843140000005" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="nFd-fs-lZe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn8-bh-3XK">
+                        <rect key="frame" x="170" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="2Ec-dd-JV6"/>
+                            <constraint firstAttribute="height" constant="20" id="eNC-mS-itD"/>
+                        </constraints>
+                        <state key="normal" image="heart_normal"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cl-iI-u5e">
+                        <rect key="frame" x="81.5" y="126" width="37" height="19"/>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9cl-iI-u5e" secondAttribute="bottom" constant="5" id="6BD-tj-mV9"/>
+                <constraint firstItem="Yn8-bh-3XK" firstAttribute="top" secondItem="RQR-Oh-Vmn" secondAttribute="top" constant="10" id="86p-RZ-Jxp"/>
+                <constraint firstItem="9cl-iI-u5e" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9SE-q3-TVY"/>
+                <constraint firstAttribute="trailing" secondItem="5MO-6i-tJg" secondAttribute="trailing" id="AYI-ZA-Yuf"/>
+                <constraint firstItem="Yn8-bh-3XK" firstAttribute="trailing" secondItem="RQR-Oh-Vmn" secondAttribute="trailing" constant="-10" id="ArT-jN-JHh"/>
+                <constraint firstAttribute="trailing" secondItem="RQR-Oh-Vmn" secondAttribute="trailing" id="C1T-j6-Ncr"/>
+                <constraint firstItem="RQR-Oh-Vmn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qvf-Te-ktI"/>
+                <constraint firstItem="5MO-6i-tJg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xw3-aQ-6id"/>
+                <constraint firstItem="5MO-6i-tJg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gkt-Cw-27l"/>
+                <constraint firstItem="9cl-iI-u5e" firstAttribute="top" secondItem="RQR-Oh-Vmn" secondAttribute="bottom" constant="10" id="rRg-KL-w8G"/>
+                <constraint firstItem="RQR-Oh-Vmn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vdr-eR-1qa"/>
+            </constraints>
+            <size key="customSize" width="150" height="137"/>
+            <connections>
+                <outlet property="btnLike" destination="Yn8-bh-3XK" id="IZ9-Fh-VPI"/>
+                <outlet property="imgRoom" destination="RQR-Oh-Vmn" id="cJa-0U-3JA"/>
+                <outlet property="lblPrice" destination="9cl-iI-u5e" id="oCX-Ig-Dqp"/>
+                <outlet property="lblSelection" destination="5MO-6i-tJg" id="huK-pp-uyJ"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="70.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart_normal" width="64" height="64"/>
+    </resources>
+</document>

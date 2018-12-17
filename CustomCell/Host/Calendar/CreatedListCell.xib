@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Bold.otf">
+            <string>CircularAirPro-Bold</string>
+        </array>
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+        <array key="arheb2.ttf">
+            <string>makent2</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatedListCell" customModule="Arheb" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellCreatedList" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreatedListCell" rowHeight="71" id="EDU-Ih-E4r" userLabel="CreatedListCell" customClass="CreatedListCell" customModule="Arheb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EDU-Ih-E4r" id="Gjn-Jr-PI3">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="70.666666666666671"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entire Home in Madurai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-SD-bnG">
+                        <rect key="frame" x="95" y="13" width="166" height="19"/>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Bold" family="Circular Air Pro" pointSize="15"/>
+                        <color key="textColor" red="0.3411764706" green="0.35294117650000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 steps . Entire Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avd-c3-ZTW">
+                        <rect key="frame" x="95" y="36" width="197" height="17"/>
+                        <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="13"/>
+                        <color key="textColor" red="0.51372549020000002" green="0.53333333329999999" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-o4-Ro9">
+                        <rect key="frame" x="0.0" y="64" width="345" height="0.0"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room_default_no_photos.png" translatesAutoresizingMaskIntoConstraints="NO" id="o12-TO-P38">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="71"/>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="9bI-Cd-kuB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydc-pS-dlt">
+                        <rect key="frame" x="313" y="25" width="17" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="HN4-Ei-Nos"/>
+                            <constraint firstAttribute="width" constant="17" id="dQI-uW-ldG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="makent2" family="makent2" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.056896551720000001" blue="0.16255387930000001" alpha="0.85006648939999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="avd-c3-ZTW" firstAttribute="top" secondItem="VbM-SD-bnG" secondAttribute="bottom" constant="4" id="BFz-F0-p06"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ydc-pS-dlt" secondAttribute="trailing" constant="7" id="FAx-p5-pxF"/>
+                    <constraint firstItem="avd-c3-ZTW" firstAttribute="leading" secondItem="o12-TO-P38" secondAttribute="trailing" constant="12" id="RjR-54-IBk"/>
+                    <constraint firstItem="Dqj-o4-Ro9" firstAttribute="leading" secondItem="o12-TO-P38" secondAttribute="leading" id="T6k-XU-aVw"/>
+                    <constraint firstItem="VbM-SD-bnG" firstAttribute="leading" secondItem="o12-TO-P38" secondAttribute="trailing" constant="12" id="bqk-bv-GXx"/>
+                    <constraint firstItem="Dqj-o4-Ro9" firstAttribute="top" secondItem="avd-c3-ZTW" secondAttribute="bottom" constant="11" id="fiM-rT-coN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="avd-c3-ZTW" secondAttribute="trailing" constant="45" id="kf1-j1-mt9"/>
+                    <constraint firstAttribute="trailing" secondItem="Dqj-o4-Ro9" secondAttribute="trailing" id="l1S-iF-qjY"/>
+                    <constraint firstItem="o12-TO-P38" firstAttribute="leading" secondItem="Gjn-Jr-PI3" secondAttribute="leading" id="tLE-XZ-49m"/>
+                    <constraint firstItem="o12-TO-P38" firstAttribute="top" secondItem="Gjn-Jr-PI3" secondAttribute="top" id="tnu-Xs-Jgu"/>
+                    <constraint firstItem="VbM-SD-bnG" firstAttribute="top" secondItem="Gjn-Jr-PI3" secondAttribute="topMargin" constant="5" id="vas-Af-NOX"/>
+                    <constraint firstItem="o12-TO-P38" firstAttribute="height" secondItem="Gjn-Jr-PI3" secondAttribute="height" id="vrw-e7-SLd"/>
+                    <constraint firstItem="Ydc-pS-dlt" firstAttribute="centerY" secondItem="Gjn-Jr-PI3" secondAttribute="centerY" id="yZD-K4-mZ3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="0.0" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="imgRoomView" destination="o12-TO-P38" id="5tA-fa-v98"/>
+                <outlet property="lblName" destination="VbM-SD-bnG" id="0Z6-3f-Cvl"/>
+                <outlet property="lblSteps" destination="avd-c3-ZTW" id="bvB-is-vCN"/>
+                <outlet property="lblTickMark" destination="Ydc-pS-dlt" id="9NG-u1-hvx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="room_default_no_photos.png" width="16" height="16"/>
+    </resources>
+</document>
