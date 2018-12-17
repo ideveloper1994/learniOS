@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8BEE4748B5A373FB7EE6304FD63B1DAC0BF035A3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AB965E002EA9D0F52C8A8FE9C95C28D2CD351DE2" : 9223372036854775807,
+    "8BEE4748B5A373FB7EE6304FD63B1DAC0BF035A3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B63B32E7-7EB7-44B0-9D65-4346076499F4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AB965E002EA9D0F52C8A8FE9C95C28D2CD351DE2" : "doxper\/doxper_daily\/",
+    "8BEE4748B5A373FB7EE6304FD63B1DAC0BF035A3" : "Makent\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Arheb",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Arheb\/Arheb.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/aldamanhori\/arheb-ios-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8BEE4748B5A373FB7EE6304FD63B1DAC0BF035A3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/asthad\/doxper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AB965E002EA9D0F52C8A8FE9C95C28D2CD351DE2"
+    }
+  ]
+}

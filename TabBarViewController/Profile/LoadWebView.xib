@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadWebView" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTitle" destination="Ng8-Wf-t42" id="6J2-M8-Upc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwNav" destination="af2-yq-ZHN" id="YwZ-J7-tvL"/>
+                <outlet property="webCommon" destination="mSe-Rl-t88" id="fIW-Gl-2is"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSe-Rl-t88">
+                    <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="af2-yq-ZHN">
+                    <rect key="frame" x="0.0" y="10" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-dd-UEb">
+                            <rect key="frame" x="7" y="3" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="back_gray"/>
+                            <connections>
+                                <action selector="onBackTapped:" destination="-1" eventType="touchUpInside" id="bWl-Bc-yyR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng8-Wf-t42">
+                            <rect key="frame" x="48" y="12" width="224" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="17"/>
+                            <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LhS-j1-uV1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mSe-Rl-t88" secondAttribute="bottom" id="1hm-RG-QK9"/>
+                <constraint firstItem="mSe-Rl-t88" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AnD-5Q-5h8"/>
+                <constraint firstAttribute="trailing" secondItem="af2-yq-ZHN" secondAttribute="trailing" id="C3D-jF-ne9"/>
+                <constraint firstItem="af2-yq-ZHN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="VCB-W9-oda"/>
+                <constraint firstAttribute="trailing" secondItem="mSe-Rl-t88" secondAttribute="trailing" id="d6h-Ji-Yiu"/>
+                <constraint firstItem="af2-yq-ZHN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mGb-U6-hGf"/>
+                <constraint firstItem="mSe-Rl-t88" firstAttribute="top" secondItem="af2-yq-ZHN" secondAttribute="bottom" constant="2" id="vVR-Tk-cFa"/>
+            </constraints>
+            <point key="canvasLocation" x="-108" y="-8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_gray" width="80" height="80"/>
+    </resources>
+</document>

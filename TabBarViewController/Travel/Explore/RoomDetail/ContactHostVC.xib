@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Bold.otf">
+            <string>CircularAirPro-Bold</string>
+        </array>
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+        <array key="CircularAir-Light.otf">
+            <string>CircularAirPro-Light</string>
+        </array>
+        <array key="arheb1.ttf">
+            <string>makent1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactHostVC" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="IZs-Tp-wzd" id="kLY-RB-3dA"/>
+                <outlet property="btnHostThumb" destination="TcH-i4-Sdr" id="8bL-Js-jDO"/>
+                <outlet property="btnSend" destination="5dj-Pv-JUE" id="JRD-fz-oKu"/>
+                <outlet property="tblContactHost" destination="RSB-pl-s2H" id="2p7-DO-86N"/>
+                <outlet property="txtRoomType" destination="j6D-ME-KKv" id="2Rl-7c-hd0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBottom" destination="g94-z6-DEw" id="UiU-Xh-asJ"/>
+                <outlet property="vwHeader" destination="Zdo-hN-oWn" id="LXV-Ll-vH1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g94-z6-DEw">
+                    <rect key="frame" x="0.0" y="410" width="320" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBe-fx-KeB">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.81960784310000001" green="0.83137254900000002" blue="0.86869506419999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dj-Pv-JUE">
+                            <rect key="frame" x="15" y="12" width="290" height="46"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.056896551720000001" blue="0.16255387930000001" alpha="0.85006648939999996" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="17"/>
+                            <state key="normal" title="Send">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="handleBtnSend:" destination="-1" eventType="touchUpInside" id="9Ph-p2-qpz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="iTC-yN-sFD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZs-Tp-wzd">
+                    <rect key="frame" x="16" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2h1-GL-0zJ"/>
+                        <constraint firstAttribute="width" constant="50" id="nyO-Cd-SxW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="makent1" family="makent1" pointSize="23"/>
+                    <state key="normal" title="f">
+                        <color key="titleColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleBtnClose:" destination="-1" eventType="touchUpInside" id="AKj-iL-PEO"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RSB-pl-s2H">
+                    <rect key="frame" x="15" y="87" width="290" height="322"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="pCC-84-7wz"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="g94-z6-DEw" secondAttribute="trailing" id="Tac-9Z-D6n"/>
+                <constraint firstItem="RSB-pl-s2H" firstAttribute="top" secondItem="IZs-Tp-wzd" secondAttribute="bottom" constant="17" id="a5D-H4-eTt"/>
+                <constraint firstAttribute="trailing" secondItem="RSB-pl-s2H" secondAttribute="trailing" constant="15" id="ed4-M9-HeY"/>
+                <constraint firstAttribute="bottom" secondItem="g94-z6-DEw" secondAttribute="bottom" id="gwh-ux-zWD"/>
+                <constraint firstItem="g94-z6-DEw" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="nc1-5l-wEB"/>
+                <constraint firstItem="RSB-pl-s2H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="q7I-fc-DBt"/>
+                <constraint firstItem="RSB-pl-s2H" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSY-QF-ZnF"/>
+                <constraint firstItem="IZs-Tp-wzd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="sGc-Vh-myE"/>
+                <constraint firstItem="IZs-Tp-wzd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="tkX-c0-a4F"/>
+                <constraint firstItem="g94-z6-DEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vQ0-KA-BeB"/>
+                <constraint firstItem="g94-z6-DEw" firstAttribute="top" secondItem="RSB-pl-s2H" secondAttribute="bottom" constant="1" id="vmf-T6-V4J"/>
+            </constraints>
+            <point key="canvasLocation" x="-339" y="-103"/>
+        </view>
+        <view contentMode="scaleToFill" id="Zdo-hN-oWn">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Host" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHR-vn-ErV">
+                    <rect key="frame" x="14" y="13" width="220" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="b4l-rf-Uq8"/>
+                        <constraint firstAttribute="height" constant="41" id="muR-zW-Wcx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CircularAirPro-Bold" family="Circular Air Pro" pointSize="30"/>
+                    <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-i4-Sdr">
+                    <rect key="frame" x="242" y="30" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="gEh-2X-fog"/>
+                        <constraint firstAttribute="height" constant="70" id="wHo-f3-vnE"/>
+                    </constraints>
+                    <connections>
+                        <action selector="handleHostThumb:" destination="-1" eventType="touchUpInside" id="c7f-dX-0gL"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6D-ME-KKv">
+                    <rect key="frame" x="14" y="52" width="202" height="59"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TcH-i4-Sdr" secondAttribute="trailing" constant="8" id="274-xc-eyV"/>
+                <constraint firstAttribute="bottom" secondItem="j6D-ME-KKv" secondAttribute="bottom" constant="19" id="4Eu-3U-20x"/>
+                <constraint firstItem="TcH-i4-Sdr" firstAttribute="leading" secondItem="j6D-ME-KKv" secondAttribute="trailing" constant="26" id="AwI-8G-NOP"/>
+                <constraint firstItem="j6D-ME-KKv" firstAttribute="leading" secondItem="tHR-vn-ErV" secondAttribute="leading" id="Nhq-P0-lR5"/>
+                <constraint firstItem="TcH-i4-Sdr" firstAttribute="centerY" secondItem="Zdo-hN-oWn" secondAttribute="centerY" id="Vry-Pv-kOa"/>
+                <constraint firstItem="j6D-ME-KKv" firstAttribute="top" secondItem="tHR-vn-ErV" secondAttribute="bottom" constant="-2" id="gNy-6c-sse"/>
+                <constraint firstItem="tHR-vn-ErV" firstAttribute="top" secondItem="Zdo-hN-oWn" secondAttribute="top" constant="13" id="k7e-lY-jZ3"/>
+                <constraint firstItem="tHR-vn-ErV" firstAttribute="leading" secondItem="Zdo-hN-oWn" secondAttribute="leading" constant="14" id="okO-T4-vU9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

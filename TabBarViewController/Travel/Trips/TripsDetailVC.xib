@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Light.otf">
+            <string>CircularAirPro-Light</string>
+        </array>
+        <array key="arheb1.ttf">
+            <string>makent1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripsDetailVC" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="animatingLoader" destination="qwO-C7-iWx" id="zJE-Xh-Unx"/>
+                <outlet property="btnBack" destination="tbe-7F-uKQ" id="H1t-wb-W9p"/>
+                <outlet property="lbHeaderSpec" destination="RHk-f7-bj1" id="Ftx-T5-4hi"/>
+                <outlet property="lbHeaderTitle" destination="agS-Lw-Jos" id="XLn-cV-ohN"/>
+                <outlet property="tblTripsDetails" destination="swL-TA-bDo" id="qHN-Eu-W35"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwHeader" destination="E1Q-17-ruM" id="b5O-wj-Tbc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbe-7F-uKQ">
+                    <rect key="frame" x="0.0" y="0.0" width="41" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="G7v-7L-b1L"/>
+                        <constraint firstAttribute="width" constant="41" id="xXC-cU-RKY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="makent1" family="makent1" pointSize="20"/>
+                    <state key="normal" title="f">
+                        <color key="titleColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="f6S-7x-NHy"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="swL-TA-bDo">
+                    <rect key="frame" x="0.0" y="42" width="320" height="388"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ttx-Am-Ltq"/>
+                        <outlet property="delegate" destination="-1" id="Hzb-0K-z0E"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="swL-TA-bDo" firstAttribute="top" secondItem="tbe-7F-uKQ" secondAttribute="bottom" id="1Lx-eM-sVR"/>
+                <constraint firstAttribute="bottom" secondItem="swL-TA-bDo" secondAttribute="bottom" constant="50" id="7Zu-0A-2jA"/>
+                <constraint firstItem="tbe-7F-uKQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EBC-bG-IYq"/>
+                <constraint firstItem="tbe-7F-uKQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GdU-pe-tAX"/>
+                <constraint firstAttribute="trailing" secondItem="swL-TA-bDo" secondAttribute="trailing" id="HT2-0q-VBn"/>
+                <constraint firstItem="swL-TA-bDo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dwY-NP-TFq"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="E1Q-17-ruM">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agS-Lw-Jos">
+                    <rect key="frame" x="20" y="12" width="282" height="60"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHk-f7-bj1">
+                    <rect key="frame" x="20" y="59" width="290" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="CircularAirPro-Light" family="Circular Air Pro" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dot_loading.gif" translatesAutoresizingMaskIntoConstraints="NO" id="qwO-C7-iWx" customClass="FLAnimatedImageView">
+                    <rect key="frame" x="135" y="71" width="60" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="424" y="-95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dot_loading.gif" width="75" height="50"/>
+    </resources>
+</document>

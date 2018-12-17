@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularAir-Bold.otf">
+            <string>CircularAirPro-Bold</string>
+        </array>
+        <array key="CircularAir-Book.otf">
+            <string>CircularAirPro-Book</string>
+        </array>
+        <array key="arheb1.ttf">
+            <string>makent1</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileDetailVC" customModule="Arheb" customModuleProvider="target">
+            <connections>
+                <outlet property="btnEdit" destination="d5r-aN-W4b" id="bMi-mm-tme"/>
+                <outlet property="imgProfile" destination="8Un-GD-jf5" id="25f-lW-qAW"/>
+                <outlet property="lblJoinFrom" destination="jbP-ei-5B0" id="PJI-gr-DBO"/>
+                <outlet property="lblUserName" destination="oZv-AG-lEI" id="RpC-cc-tms"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Un-GD-jf5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YX-Qu-3cy">
+                    <rect key="frame" x="0.0" y="288" width="320" height="192"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZv-AG-lEI">
+                            <rect key="frame" x="15" y="24" width="290" height="32"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Bold" family="Circular Air Pro" pointSize="24"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-xk-InI">
+                            <rect key="frame" x="15" y="120" width="290" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-ei-5B0">
+                            <rect key="frame" x="15" y="85" width="290" height="23"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="CircularAirPro-Book" family="Circular Air Pro" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5r-aN-W4b">
+                    <rect key="frame" x="244" y="258" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="d2A-Uh-tVF"/>
+                        <constraint firstAttribute="height" constant="60" id="rfN-j5-SDq"/>
+                    </constraints>
+                    <state key="normal" image="edit"/>
+                    <connections>
+                        <action selector="btnEditClicked:" destination="-1" eventType="touchUpInside" id="CKz-fE-dfg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG8-BG-hqf">
+                    <rect key="frame" x="6" y="6" width="44" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="makent1" family="makent1" pointSize="25"/>
+                    <state key="normal" title="f">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBackClicked:" destination="-1" eventType="touchUpInside" id="MFe-W8-0Wr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Un-GD-jf5" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="QVc-v6-9h8"/>
+                <constraint firstItem="8Un-GD-jf5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RGf-Dv-lQA"/>
+                <constraint firstAttribute="trailing" secondItem="8Un-GD-jf5" secondAttribute="trailing" id="ZGg-dG-6Eg"/>
+                <constraint firstItem="7YX-Qu-3cy" firstAttribute="top" secondItem="8Un-GD-jf5" secondAttribute="bottom" id="l3B-Ud-gPd"/>
+                <constraint firstAttribute="trailing" secondItem="d5r-aN-W4b" secondAttribute="trailing" constant="16" id="l3o-DH-6pV"/>
+                <constraint firstItem="d5r-aN-W4b" firstAttribute="top" secondItem="8Un-GD-jf5" secondAttribute="bottom" constant="-30" id="mB0-3X-Hy2"/>
+                <constraint firstItem="8Un-GD-jf5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pbo-P7-yAb"/>
+                <constraint firstAttribute="bottom" secondItem="7YX-Qu-3cy" secondAttribute="bottom" id="rr9-VL-Bou"/>
+                <constraint firstAttribute="trailing" secondItem="7YX-Qu-3cy" secondAttribute="trailing" id="uFZ-Fb-zNw"/>
+                <constraint firstItem="7YX-Qu-3cy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yUh-c2-HYX"/>
+            </constraints>
+            <point key="canvasLocation" x="-181" y="16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit" width="80" height="80"/>
+    </resources>
+</document>
